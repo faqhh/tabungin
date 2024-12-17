@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+    top: 50%;
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(206, 204, 204, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.navigation .dropdown-toggle {
+    cursor: pointer;
+    position: relative;
+}
+
+.navigation .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 70%;
+    left: 70px;
+    background-color: #2a448c;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 100;
+    min-width: 150px;
+}
+
+.navigation .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.navigation .dropdown-menu a:hover {
+    background-color: #1f2e77;
+    color: #d3d3d3;
+}
+
+.navigation .dropdown-toggle:hover + .dropdown-menu,
+.navigation .dropdown-menu:hover {
+    display: block;
+}
+
+.navigation a:hover {
+    color: #1f2468;
+}
+
+.navigation a.active {
+    background-color: #3749b4;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.navigation .profile {
+    background-color: #3749b4;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navigation .profile:hover {
+    color: #1f2468;
+}
+.notification-panel {
+    position: absolute; 
+    top: 50px; 
+    right: 10px; 
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+
+.notification-panel h3{
+    font-weight: bold;
+  }
+
+.border-notif{
+    border-bottom: 1px solid;
+}
+
+.notification-bell {
+    position: relative; 
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 10px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    gap: 10px;
+}
+
+.sign-up {
+    background-color: #ffffff;
+    color: #1f2468;
+    border-color: #1f2468;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.sign-up:hover {
+    background-color: #1f2468;
+    color: #ffffff;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+.savings-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.select-box {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+.frequency {
+    display: flex;
+    flex-direction: column;
+}
+
+.frequency-options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.frequency-options button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.frequency-options .active {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    color: #666;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cancel,
+.save {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cancel {
+    background-color: #666;
+    color: white;
+}
+
+.save {
+    background-color: #1e3a8a;
+    color: white;
+}

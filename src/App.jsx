@@ -14,7 +14,7 @@ import Listmandiri from "./pages/listmandiri";
 import Profil from "./pages/profil";
 import Tabunganbersama from "./pages/tabunganbersama";
 import Tabunganpribadi from "./pages/tabunganpribadi";
-import Login from "./pages/login";
+import Login from "./pages/Login";
 import EditBersama from "./pages/editbersama";
 import EditPribadi from "./pages/editpribadi";
 
